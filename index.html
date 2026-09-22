@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FRODO — Virtual Samurai</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #050505;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 25px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background:
+        radial-gradient(circle at center, #29200d 0%, #090909 45%, #050505 75%);
+    }
+
+    .hero h1 {
+      font-size: clamp(55px, 14vw, 130px);
+      line-height: 0.9;
+      letter-spacing: -5px;
+      text-transform: uppercase;
+    }
+
+    .gold {
+      color: #f5c451;
+    }
+
+    .tagline {
+      margin: 25px auto;
+      color: #aaa;
+      font-size: 18px;
+      max-width: 550px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      margin: 7px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #050505;
+      background: #f5c451;
+    }
+
+    .btn.dark {
+      background: #171717;
+      color: white;
+      border: 1px solid #333;
+    }
+
+    section {
+      padding: 80px 8%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #292929;
+      border-radius: 15px;
+      padding: 30px;
+      margin-top: 25px;
+    }
+
+    .contract {
+      word-break: break-all;
+      color: #f5c451;
+      margin-top: 15px;
+    }
+
+    .roadmap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .phase {
+      background: #111;
+      border: 1px solid #292929;
+      padding: 25px;
+      border-radius: 15px;
+    }
+
+    .phase h3 {
+      color: #f5c451;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid #222;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        letter-spacing: -3px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">⚔ FRODO</div>
+
+  <nav>
+    <a href="#story">Story</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#token">Token</a>
+  </nav>
+</header>
+
+<section class="hero">
+
+  <div>
+    <div style="font-size:70px;">🥷</div>
+
+    <h1>
+      FRODO<br>
+      <span class="gold">SAMURAI</span>
+    </h1>
+
+    <p class="tagline">
+      The Virtual Samurai has entered the battlefield.
+      Ignore the noise. Follow the blade.
+    </p>
+
+    <div class="buttons">
+      <a class="btn" href="#token">ENTER THE DOJO</a>
+
+      <!-- Replace with your real X link -->
+      <a class="btn dark" href="#" target="_blank">𝕏 FOLLOW</a>
+    </div>
+  </div>
+
+</section>
+
+<section id="story">
+
+  <h2 class="section-title">THE STORY</h2>
+
+  <div class="card">
+    <p>
+      Frodo is a virtual samurai forged for the internet battlefield.
+      No throne. No master. Just discipline, memes and a sword.
+    </p>
+
+    <br>
+
+    <p>
+      The mission is simple:
+      build the dojo, gather the warriors and let the community
+      write the legend.
+    </p>
+  </div>
+
+</section>
+
+<section id="token">
+
+  <h2 class="section-title">TOKEN</h2>
+
+  <div class="card">
+
+    <h3>$FRODO</h3>
+
+    <p>Solana meme token.</p>
+
+    <p class="contract">
+      CONTRACT ADDRESS: COMING SOON
+    </p>
+
+    <div class="buttons">
+
+      <!-- Replace these # links later -->
+      <a class="btn" href="#">BUY $FRODO</a>
+
+      <a class="btn dark" href="#">CHART</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="roadmap">
+
+  <h2 class="section-title">ROADMAP</h2>
+
+  <div class="roadmap">
+
+    <div class="phase">
+      <h3>PHASE 01</h3>
+      <p>Launch the dojo.</p>
+      <p>Build the community.</p>
+      <p>Release the memes.</p>
+    </div>
+
+    <div class="phase">
+      <h3>PHASE 02</h3>
+      <p>Grow the warrior army.</p>
+      <p>More content.</p>
+      <p>More community events.</p>
+    </div>
+
+    <div class="phase">
+      <h3>PHASE 03</h3>
+      <p>Expand the Frodo universe.</p>
+      <p>Community-driven development.</p>
+      <p>More surprises.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <p>⚔ FRODO — THE VIRTUAL SAMURAI</p>
+
+  <p style="margin-top:10px;">
+    Ignore the noise. Follow the blade.
+  </p>
+
+</footer>
+
+</body>
+</html>
